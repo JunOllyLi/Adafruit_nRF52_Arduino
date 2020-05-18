@@ -50,7 +50,7 @@ ENTRY(Reset_Handler)
  * Stack is used by ISR and SoftDevice only, other code run on thread's allocated stack from heap. 
  * Maximum stack used by S132's spec is 1536 byte. Therefore 2KB should be enough
  */
-__StackSize = 1024*2;
+__StackSize = 1024*4;
 
 /* Set stack top to end of RAM, and stack limit move down by size of stack_dummy section */
 PROVIDE(__StackTop   = ORIGIN(RAM) + LENGTH(RAM));
