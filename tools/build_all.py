@@ -50,7 +50,7 @@ def build_examples(variant):
     print(build_format.format('Library', 'Example', '\033[39mResult\033[0m', 'Time'))
     print(build_separator)
     
-    fqbn = "adafruit:nrf52:{}:softdevice={},debug=l0".format(variant, 's140v6' if variant != 'feather52832' else 's332v6')
+    fqbn = "adafruit:nrf52:{}:softdevice={},debug=l0".format(variant, 's340v6' if variant != 'feather52832' else 's332v6')
 
     for sketch in all_examples:
         start_time = time.monotonic()
